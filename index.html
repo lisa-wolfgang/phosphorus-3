@@ -31,7 +31,7 @@
 </div>
 <div class="player"></div>
 <div class="internal-error" style="display: none;">
-  Uh-oh! An internal error occurred. <a id="error-bug-link" target="_blank" href="https://github.com/nathan/phosphorus/issues/new">Click here</a> to file a bug report.
+  Uh-oh! An internal error occurred. <a id="error-bug-link" target="_blank" href="https://github.com/lisa-wolfgang/phosphorus-3/issues/new">Click here</a> to file a bug report.
 </div>
 </div>
 
@@ -68,16 +68,16 @@
 </section>
 <section>
   <h1>Report a problem</h1>
-  <p>phosphorus 3 is still in beta. New Scratch 3.0 features may not work correctly. <a id="bug-link" target="_blank" href="https://github.com/nathan/phosphorus/issues/new?body=%0A%0A%0AMozilla%2F5.0%20(iPhone%3B%20CPU%20iPhone%20OS%2012_1_4%20like%20Mac%20OS%20X)%20AppleWebKit%2F605.1.15%20(KHTML%2C%20like%20Gecko)%20Version%2F12.0%20Mobile%2F15E148%20Safari%2F604.1">Click here</a> to report a problem with this project.</p>
+  <p>phosphorus 3 is still in beta. New Scratch 3.0 features may not work correctly. <a id="bug-link" target="_blank" href="https://github.com/lisa-wolfgang/phosphorus-3/issues/new?body=%0A%0A%0AMozilla%2F5.0%20(iPhone%3B%20CPU%20iPhone%20OS%2012_1_4%20like%20Mac%20OS%20X)%20AppleWebKit%2F605.1.15%20(KHTML%2C%20like%20Gecko)%20Version%2F12.0%20Mobile%2F15E148%20Safari%2F604.1">Click here</a> to report a problem with this project.</p>
 </section>
 </div>
 <section>
   <h1>Credits</h1>
-  <p>phosphorus 3 is a version of phosphorus that converts Scratch 3.0 projects to Scratch 2.0 before compiling them.<br>phosphorus was created by <a href="https://github.com/nathan">Nathan</a>. Its CPS-style compilation and overall design was inspired by <a href="https://github.com/RHY3756547">Rhys</a>'s <a href="https://code.google.com/p/sb2-js/">sb2.js</a>. It would have more bugs if not for <a href="https://github.com/trumank">Truman</a> and <a href="https://github.com/tjvr">Tim</a>. It uses the <a href="https://stuk.github.io/jszip/">JSZip</a> library, created by <a href="https://github.com/stuk">Stuart Knightley</a>, <a href="https://github.com/dduponchel">David Duponchel</a>, Franz Buchinger, and <a href="https://github.com/aadsm">António Afonso</a>, to read <code>.sb2</code> files and compressed projects, and the <a href="https://code.google.com/p/canvg/">canvg</a> library, created by <a href="https://code.google.com/u/gabelerner@gmail.com/">Gabe Lerner</a>, to render SVGs in <code>&lt;canvas&gt;</code> elements.
+  <p>The changes in phosphorus 3 was made by <a href="https://github.com/lisa-wolfgang">lisa_wolfgang</a>.<br><br>phosphorus was created by <a href="https://github.com/nathan">Nathan</a>. Its CPS-style compilation and overall design was inspired by <a href="https://github.com/RHY3756547">Rhys</a>'s <a href="https://code.google.com/p/sb2-js/">sb2.js</a>. It would have more bugs if not for <a href="https://github.com/trumank">Truman</a> and <a href="https://github.com/tjvr">Tim</a>. It uses the <a href="https://stuk.github.io/jszip/">JSZip</a> library, created by <a href="https://github.com/stuk">Stuart Knightley</a>, <a href="https://github.com/dduponchel">David Duponchel</a>, Franz Buchinger, and <a href="https://github.com/aadsm">António Afonso</a>, to read <code>.sb2</code> files and compressed projects, and the <a href="https://code.google.com/p/canvg/">canvg</a> library, created by <a href="https://code.google.com/u/gabelerner@gmail.com/">Gabe Lerner</a>, to render SVGs in <code>&lt;canvas&gt;</code> elements.
   </p><h1>Code</h1>
-  <p>The source code for phosphorus 3 is available <a href="https://github.com/nathan/phosphorus">on GitHub</a>.</p>
-<br>
-<p>The original version of Phosphorus can be found <a href=“phosphorus.github.io”>here</a>.</p>
+  <p>The source code for phosphorus 3 is available <a href="https://github.com/lisa-wolfgang/phosphorus-3">on GitHub</a>.</p>
+  <h1>Original Version</h1>
+  <p>The original version of Phosphorus can be found <a href=“https://phosphorus.github.io”>here</a>.</p>
 </section>
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js" type="text/javascript" async=""></script><script src="fonts.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jszip/2.4.0/jszip.js"></script>
@@ -181,7 +181,7 @@
       id = '';
     }
 
-    document.title = 'phosphorus';
+    document.title = 'phosphorus 3 BETA';
     P.player.load(id, function(stage) {
       stage.triggerGreenFlag();
     }, function(title) {
@@ -196,7 +196,7 @@
   }
 
   function updateBugLink() {
-    bugLink.href = P.player.projectId ? 'https://github.com/nathan/phosphorus/issues/new?title=' + encodeURIComponent(P.player.projectTitle || P.player.projectURL) + '&body=' + encodeURIComponent('\n\n\n' + P.player.projectURL + '\nhttps://phosphorus.github.io/#' + P.player.projectId + '\n' + navigator.userAgent) : 'https://github.com/nathan/phosphorus/issues/new?body=' + encodeURIComponent('\n\n\n' + navigator.userAgent);
+    bugLink.href = P.player.projectId ? 'https://github.com/lisa-wolfgang/phosphorus-3/issues/new?title=' + encodeURIComponent(P.player.projectTitle || P.player.projectURL) + '&body=' + encodeURIComponent('\n\n\n' + P.player.projectURL + '\nhttps://lisa-wolfgang.github.io/phosphorus-3/#' + P.player.projectId + '\n' + navigator.userAgent) : 'https://github.com/lisa-wolfgang/phosphorus-3/issues/new?body=' + encodeURIComponent('\n\n\n' + navigator.userAgent);
   }
 
   function updatePackageLink() {
